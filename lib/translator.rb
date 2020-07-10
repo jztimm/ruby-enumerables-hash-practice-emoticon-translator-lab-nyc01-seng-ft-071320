@@ -15,7 +15,6 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   libary = load_library(file)
-<<<<<<< HEAD
   libary.each do |key, value|
     if value[:english] == emoticon
       #binding.pry
@@ -23,27 +22,22 @@ def get_japanese_emoticon(file, emoticon)
     end
   end
   "Sorry, that emoticon was not found"
-=======
->>>>>>> 3696de64b0a5eb9e7c94db20dfdb5593f83f56de
 end
 
 def get_english_meaning(file, emoticon)
   libary = load_library(file)
   libary.each do |key, value|
-<<<<<<< HEAD
     if value[:english] == emoticon || value[:japanese] == emoticon
       #binding.pry
       return key
     end
   end
   "Sorry, that emoticon was not found"
-=======
     if value[:english] == emoticon
       return key
     end
   end
   "Sorry"
->>>>>>> 3696de64b0a5eb9e7c94db20dfdb5593f83f56de
 end
 
 
